@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <title>Climate App</title>
+</head>
+<body class="bg-black ">
+  <div class="w-full h-dvh bg-image bg-cover">
+       <div class=" w-full h-72 pt-20 flex justify-center items-center"><input class="border-2 border-white  rounded-4xl text-white p-2 text-2xl" placeholder="Enter City Name" type="text"> <button class="search-button border-2 border-white rounded-4xl text-white p-2 px-6 m-2 text-2xl cursor-pointer" >Search</button></div>
+
+       <div class=" w-full flex flex-wrap justify-center items-center">
+
+            <div class=" h-full  flex justify-center items-center">
+               <div class="w-80 sm:w-150 border-1 border-b-black text-white m-5 p-8 rounded-3xl backdrop-brightness-80 text-center p">
+                   <h3 class="text-4xl p-4 city">Delhi</h3>
+                   <div> 
+                     <p class="text-2xl m-3 temp">Temperature : 25 °C</p>
+                     <p class="text-2xl m-3 wind">wind Speed :34 km/h </p>
+                     <p class="text-2xl m-3 weather">Wheather : Rain</p>
+                     <p class="text-2xl m-3 day">currently : day</p>
+                   </div>
+               </div>
+            </div>
+       </div>
+         
+  </div>
+<div class="w-full text-center absolute bottom-0 text-white">
+            <p>This is developed by <a href="https://github.com/RatanX">Ratandas</a></p>
+        </div>
+                 <div class="w-full absolute top-0 left-0 pl-1.5 text-slate-50">
+            <p class="text-6xl text-shadow-indigo-400 font-bold">Climate <a href="https://github.com/RatanX"><span class="text-xl font-normal">By @Ratan</span></a></p>
+        </div>
+  <script src="./script.js"></script>
+</body>
+</html>
+
+<!--
+prototype
+technology - HTML,Tailwind CSS,Javascript
+
+fetch - logitude and langitude from enterd location
+ex - input Delhi -> longitude 28.2545, latitude 26.6568
+
+fetch - atmosphare detail from latitude and langitude
+ex - input lat,lang ->  Atmoshpheric detail
+
+render detail.
+-->
